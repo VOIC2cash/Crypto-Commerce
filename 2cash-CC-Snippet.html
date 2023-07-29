@@ -1,0 +1,37 @@
+<!-- order button (start) -->
+<form class="form-button" name="form" method="post" action="https://payment.2cash.io/v1/payment/quickpay" enctype="application/x-www-form-urlencoded" onsubmit="getformvalue(this)">  
+  <input type="text" name="p_mid" value="2320423385898" hidden />          
+  <input type="text" name="p_curr_code" value="USD" hidden />
+  <input type="text" name="p_tot_amt" value="32" hidden />
+  <input type="text" name="p_tot_item_cnt" value="1" hidden />
+  <input type="text" name="p_orders" value='{"orderitems": [{
+  "itm_id": "VtK2QFs1",
+  "itm_name": "Product Description",
+  "img_url": "",
+  "itm_qty": 1,
+  "itm_type": 1,
+  "itm_price": 32,
+  "total": 32,
+  "trans_no": "",
+  "item_field1": null,
+  "item_field2": null,
+  "item_field3": null,
+  "item_field4": null,
+  "item_field5": null}]}' hidden />
+  <input type="text" name="p_md5_hash_info" value="" hidden />
+  <input type="text" name="p_return_url" value="https://payment.2cash.io/processing/order_success.aspx" hidden />
+  <input type="text" name="p_cancel_url" value="https://payment.2cash.io/processing/order_cancelled.aspx" hidden />
+  <input type="text" name="p_error_url" value="https://payment.2cash.io/processing/order_failed.aspx" hidden />
+  <input type="text" name="p_language" value="en" hidden />
+  <input type="text" name="p_transtype" value="Q" hidden />  
+  <p>
+    <input id="btnOrderNow" type="submit" class="btn-2cash btn-2cash-green btn-2cash-size1 order_now" value="ORDER NOW"></button>
+  </p>
+</form>
+<!-- order button (end) -->
+
+<!-- ORDER FUNCTION - start ########################## -->
+<script src="https://payment.2cash.io/processing/scripts/app.js"></script>
+<script src="https://payment.2cash.io/processing/scripts/core-min.js"></script>
+<script src="https://payment.2cash.io/processing/scripts/hmac-md5.js"></script>
+<!-- ORDER FUNCTION - end ######################## -->
